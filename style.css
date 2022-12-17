@@ -118,7 +118,7 @@ header p:last-child {
 }
 
 #form-submitButton {
-  margin: 0 auto;
+  margin: 0;
 }
 
 input {
