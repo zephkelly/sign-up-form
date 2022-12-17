@@ -41,7 +41,7 @@
           <form id="form-signup" action="/signup" method="POST">
             <div class="wrapper">
               <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" />
+              <input type="text" name="firstName" id="firstName" required />
             </div>
             <div class="wrapper">
               <label for="lastName">Last Name</label>
@@ -49,22 +49,23 @@
             </div>
             <div class="wrapper">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </div>
             <div class="wrapper">
               <label for="phone">Phone Number</label>
-              <input type="tel" name="phone" id="phone" />
+              <input type="tel" name="phone" id="phone" required />
             </div>
             <div class="wrapper">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required />
             </div>
             <div class="wrapper">
-              <label for="confirmPassword">Confirm Password</label>
+              <label for="confirmPassword" required>Confirm Password</label>
               <input
                 type="password"
                 name="confirmPassword"
                 id="confirmPassword"
+                required
               />
             </div>
             <button id="form-submitButton" type="submit">Sign Up</button>
@@ -74,6 +75,7 @@
               Already have an account?
               <span class="link">Log in</span>
             </h6>
+            <h5 id="error-message" class="hide">Error: passwords must match</h5>
             <script src="/script.js"></script>
           </footer>
         </div>

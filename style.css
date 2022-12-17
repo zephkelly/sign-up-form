@@ -99,8 +99,26 @@ header p:last-child {
   border: none;
 }
 
+#form-submitButton:hover {
+  background-color: #5e7f6a;
+}
+
+#error-message {
+  color: red;
+  font-size: 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
 .wrapper * {
   display: flex;
+}
+
+#form-submitButton {
+  margin: 0 auto;
 }
 
 input {
