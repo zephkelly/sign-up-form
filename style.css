@@ -6,55 +6,83 @@ body {
 }
 
 /*Cover Hero*/
-.cover * {
+.cover {
   width: 30vw;
+  height: 100vh;
+  min-height: 40rem;
+}
+
+.logo-banner {
   position: absolute;
+  top: 20%;
+  width: 30%;
+  height: 10rem;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cover img {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-#logo {
+.cover #logo {
   color: white;
   font-size: 3rem;
-  top: 35%;
-  left: 6%;
-}
-
-.black-background {
-  height: 6rem;
-  top: 30%;
-  background-color: black;
-  opacity: 0.5;
-}
-
-.cover h1 {
-  font-family: "Ubuntu", sans-serif;
-  top: 28%;
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  padding-left: 1.2rem;
 }
 
 .cover h6 {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
-  bottom: 2%;
-  text-align: center;
+  position: absolute;
+  bottom: 0%;
+  height: auto;
   color: white;
-  font-size: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 /*Form*/
 main {
-  margin: 0 0 0 30vw;
+  width: 70vw;
+  overflow: hidden;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+  height: 100%;
 }
 
 .form-section {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  padding: 2rem;
+  height: 23rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: -8rem;
+  width: 80%;
+}
+
+header p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
+header p:last-child {
+  padding-bottom: 2rem;
 }
 
 #form-signup {
@@ -62,13 +90,38 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+#form-submitButton {
+  height: 2rem;
+  width: 10rem;
+  background-color: #7ba687;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+}
+
 .wrapper * {
   display: flex;
 }
+
 input {
   margin: 0 0 1rem 0;
+  border-radius: 0.3rem;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
 }
 
 label {
+  font-family: "Ubuntu", sans-serif;
   min-width: 6rem;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
 }

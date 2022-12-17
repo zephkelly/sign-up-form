@@ -19,66 +19,64 @@
   </head>
   <body>
     <div class="cover">
-      <img src="./images/cover.jpg" />
-      <div class="black-background"></div>
-      <span id="logo" class="material-symbols-outlined"> psychiatry </span>
-      <h1>GAIA</h1>
-      <h6>Photo by Morgane Le Breton @ unsplash</h6>
+      <img src="images/cover.jpg" />
+      <div class="logo-banner">
+        <span id="logo" class="material-symbols-outlined"> psychiatry </span>
+        <h6>Photo by Morgane Le Breton @ unsplash</h6>
+      </div>
     </div>
     <main>
-      <header>
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realise your dreams. Sign up
-          <em>now</em> to get started.
-        </p>
-        <br />
-        <p></p>
-        <p>You <em>know</em> you want to.</p>
-      </header>
-      <div class="form-section">
-        <h3>Lets's do this</h3>
-        <form id="form-signup" action="/signup" method="POST">
-          <div class="wrapper">
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" id="firstName" />
-          </div>
-
-          <div class="wrapper">
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" id="lastName" />
-          </div>
-
-          <div class="wrapper">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-          </div>
-
-          <div class="wrapper">
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" />
-          </div>
-
-          <div class="wrapper">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
-          </div>
-
-          <div class="wrapper">
-            <label for="confirmPassword">Confirm Password</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              id="confirmPassword"
-            />
-          </div>
-
-          <button id="form-submitButton" type="submit">Sign Up</button>
-        </form>
-        <footer>
-          <h6>Already have an account? <span class="link">Log in</span></h6>
-          <script src="/script.js"></script>
-        </footer>
+      <div class="sign-up">
+        <header>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realise your dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </header>
+        <div class="form-section">
+          <h3>Lets's do this</h3>
+          <form id="form-signup" action="/signup" method="POST">
+            <div class="wrapper">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" />
+            </div>
+            <div class="wrapper">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+            <div class="wrapper">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="wrapper">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="wrapper">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="wrapper">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <button id="form-submitButton" type="submit">Sign Up</button>
+          </form>
+          <footer>
+            <h6>
+              Already have an account?
+              <span class="link">Log in</span>
+            </h6>
+            <script src="/script.js"></script>
+          </footer>
+        </div>
       </div>
     </main>
   </body>
